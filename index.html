@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey Form</h1>
+      <p class="description">
+        Please fill out this form with the required information
+      </p>
+      <form
+        id="survey-form"
+        method="post"
+        action="ttps://register-demo.freecodecamp.org"
+      >
+        <fieldset>
+          <h2>Profile</h2>
+          <div class="name">
+            <label for="first-name"
+              >First Name:
+              <input id="first-name" type="text" name="first-name" required placeholder="Edson"
+            /></label>
+            <label for="last-name"
+              >Last Name:
+              <input id="last-name" type="text" name="last-name" required placeholder="Hermosa"
+            /></label>
+          </div>
+          <div class="email">
+            <label for="email"
+              >Email: <input id="email" type="text" name="email" required 
+            /></label>
+          </div>
+          <label for="contact-number"
+            >Contact Number:
+            <input
+              id="contact-number"
+              name="contact-number"
+              type="number"
+              required placeholder="+63 900 001 5512"
+          /></label>
+          <label for="role"
+            >Which option best describes your current role?<select
+              name="role"
+              id="role"
+            >
+              <option value="">(Select one)</option>
+              <option value="1">Student</option>
+              <option value="2">Full-Time</option>
+              <option value="3">Part-Time</option>
+              <option value="4">Prefer not to say</option>
+              <option value="5">other</option>
+            </select></label
+          >
+        </fieldset>
+
+        <fieldset class="developer">
+          <h2>What kind of developer are you?</h2>
+
+          <label for="front-dev"
+            ><input
+              id="front-dev"
+              type="radio"
+              name="developer"
+              class="inline"
+              value="front-dev"
+            />
+            Front-End Developer</label
+          >
+          <label for="back-dev"
+            ><input
+              id="back-dev"
+              type="radio"
+              name="developer"
+              class="inline"
+              value="back-dev"
+            />
+            Back-End Developer</label
+          >
+          <label for="full-stack"
+            ><input
+              id="full-stack"
+              type="radio"
+              name="developer"
+              class="inline"
+              value="full-stack"
+            />
+            Full-Stack Developer</label
+          >
+          <label for="game-developer"
+            ><input
+              id="game-developer"
+              type="radio"
+              name="developer"
+              class="inline"
+              value="game-developer"
+            />
+            Game Developer</label
+          >
+        </fieldset>
+        <fieldset class="improve">
+          <h2>What would you like to be seen more improved?</h2>
+          <label for="Design" name="Design">
+            <input
+              id="Design"
+              type="checkbox"
+              required
+              name="Design"
+              class="inline"
+              value="Design"
+            />Design
+          </label>
+          <label for="Content" name="Content">
+            <input
+              id="Content"
+              type="checkbox"
+              required
+              name="Content"
+              class="inline"
+              value="Content"
+            />Content
+          </label>
+          <label for="Color-palette" name="color-palette">
+            <input
+              id="color-palette"
+              type="checkbox"
+              required
+              name="color-palette"
+              class="inline"
+              value="color-palette"
+            />Color palette
+          </label>
+          <label for="none" name="none">
+            <input
+              id="none"
+              type="checkbox"
+              required
+              name="none"
+              class="inline"
+              value="none"
+            />None
+          </label>
+        </fieldset>
+        <fieldset>
+          <label class="dropdown" for="dropdown">
+            What is your favorite coding langugage?</label
+          >
+          <select name="dropdown" id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">C</option>
+            <option value="2">Python</option>
+            <option value="3">C++</option>
+            <option value="4">Java</option>
+            <option value="5">Ruby</option>
+            <option value="6">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label clacss="comment" for="comment"
+            >Comment:
+            <textarea
+              id="comment"
+              name="comment"
+              rows="3"
+              cols="30"
+              placeholder="This form looks so great!"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

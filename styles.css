@@ -1,0 +1,151 @@
+
+*{
+    box-sizing: border-box;    
+    font-size: 16px;
+    font-family: Tahoma;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:#104b37;
+    color: white;
+}
+
+h1{
+    padding-top:10px ;
+    font-size: 40px;
+    text-shadow: 2px 5px black;
+}
+
+.container{
+    width: 80%;;
+    background-color:rgb(8, 40, 29);
+    margin: 2px auto;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 0 20px;
+}
+
+h2{
+    font-size:larger;
+    text-shadow: 2px 2px black;
+}
+fieldset{
+    border: none;
+    border-bottom: 4px solid #009966;
+
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.description{
+    border-bottom: 4px solid #009966;
+    margin-bottom: -5px;
+    padding-bottom: 15px;
+}
+
+h1,h2, p {
+    text-align: center;
+}
+
+
+
+.name{
+    display:flex; 
+    flex-direction: row; 
+    margin-bottom:10px ;
+}
+
+
+input,text,select{
+    margin: 10px 0 0 0;
+    width: 99%;
+    background-color: #104b37;
+    margin: 0 auto;
+    color: white;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+
+input,select{
+    margin-top: 10px;
+}
+
+
+#first-name{
+    width: 90%;
+    margin-right:50px;
+}
+
+/*for button in type="number" to go away*/
+input::-webkit-outer-spin-button,           
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {                
+  -moz-appearance: textfield;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top:-10px;
+    width: initial;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+#role,
+#dropdown{
+    height: 30px;
+
+}
+
+.developer label{
+    text-align: left;
+    margin:15px 0 0 32% ;
+}
+
+.improve label{
+    text-align: left;
+    margin:15px 0 0 32% ;
+}
+
+input[type="checkbox"]{
+    margin-right: 5px ;
+
+}
+
+textarea{
+    display: block;
+    background-color: #104b37;
+    color: white;
+    width: 100%;
+    margin-top:10px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #104b37;
+    border-color: white;
+    min-width:30px;
+    max-width: 200px;
+}
+
+form{
+    padding-bottom: 20px;
+}
